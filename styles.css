@@ -19,9 +19,8 @@ body{
     
 }
 .logo img{
-    width: 70vw; 
+    width: 60vw; 
     height: auto;
-    
     
 }
 .emoji-container{
@@ -66,13 +65,14 @@ body{
     width: 80%;
     height: 70%;
     max-width: 300px;
+    display: flex;                   
+    justify-content: center;         
+    align-items: center;             
     text-align: center;
 }
-#modalMessage{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 40%;
+
+#modalMessage {
+    display: block;                  
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
@@ -80,6 +80,7 @@ body{
     line-height: 1.5;
     max-width: 100%;
 }
+
 .close {
     position: absolute;
     top: 26%;
