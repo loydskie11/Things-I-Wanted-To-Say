@@ -1,9 +1,9 @@
 @media (max-width: 600px) {
     .logo img{
-        width: 100vw;
+        width: 100%;
     }
     .emoji {
-        width: 12vw;
+        width: 10vw;
     }
 }
 body{
@@ -16,10 +16,13 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 .logo img{
-    width: 50vw; 
+    width: 70vw; 
     height: auto;
+    
+    
 }
 .emoji-container{
     display: flex;
@@ -33,6 +36,7 @@ body{
     position: absolute;
     width: 5vw;
     height: auto;
+    min-width: 50px;
 }
 @keyframes float {
     0%, 100% {
