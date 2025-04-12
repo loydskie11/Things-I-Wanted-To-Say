@@ -1,6 +1,7 @@
 const emojis = document.querySelectorAll('.emoji');
 const modal = document.getElementById('modal');
 const modalMessage = document.getElementById('modalMessage');
+const closeBtn = document.getElementById('closeBtn');
 
 emojis.forEach(emoji => {
     emoji.addEventListener('click', () => {
@@ -16,6 +17,10 @@ window.addEventListener('click', (e) => {
     }
 });
 
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+})
+
 document.querySelectorAll('.emoji').forEach(emoji => {
     const delay = (Math.random() * 4).toFixed(2);
     const top = Math.random() * 90;
@@ -24,3 +29,4 @@ document.querySelectorAll('.emoji').forEach(emoji => {
     emoji.style.top = `${top}%`;
     emoji.style.left = `${left}%`;
 });
+
