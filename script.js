@@ -2,6 +2,8 @@ const emojis = document.querySelectorAll('.emoji');
 const modal = document.getElementById('modal');
 const modalMessage = document.getElementById('modalMessage');
 const closeBtn = document.getElementById('closeBtn');
+const audio = document.getElementById('bg-music');
+const icon = document.getElementById('music-icon');
 
 emojis.forEach(emoji => {
     emoji.addEventListener('click', () => {
@@ -30,3 +32,12 @@ document.querySelectorAll('.emoji').forEach(emoji => {
     emoji.style.left = `${left}%`;
 });
 
+icon.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        icon.src = 'assets/pause.png';
+    } else {
+        audio.pause();
+        icon.src = 'assets/play.png';
+    }
+});
