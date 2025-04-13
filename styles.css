@@ -31,7 +31,7 @@ body{
 }
 .emoji{
     cursor: pointer;
-    animation: float 4s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
     position: absolute;
     width: 5vw;
     height: auto;
