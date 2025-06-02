@@ -15,6 +15,7 @@ body{
     text-align: center;
     font-family: 'Schoolbell', cursive;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 .logo  {
     position: absolute;
