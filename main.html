@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/title.png">
+    <title>Things I Wanted To Say</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pic">
+        <img src="imgs/pink-flower-field.jpg" alt="">
+    </div>
+    <div class="sparkle">
+        <img src="imgs/sparkle2.gif" alt="">
+    </div>
+    <div class="music-container">
+        <audio id="bg-music" src="assets/foundALove.mp3" loop></audio>
+        <img src="assets/musicLogo.jpg" alt="bg-music-logo">
+        <img id="music-icon" src="assets/play.png" style="width: 1vw; height: auto; min-width: 15px; cursor: pointer;" alt="play">
+        <div style="color: #333333; font-size: 10px;">Listen to your comfort song :))</div>
+        <div class="shuffle-cont">
+            <div style="color: #333333; display: flex; align-items: center; font-size: 10px; width: auto; height: 1.8vw;">Shuffle the emojis</div>
+            <img id="shuffle-icon" src="assets/shuffle.png" onclick="shuffleEmojis()" style="width: 1vw; height: auto; min-width: 15px; cursor: pointer;" alt="shuffle">
+        </div>
+    </div>
+    
+    
+    <div class="logo">
+        <img src="imgs/title.png" alt="logo">
+    </div>
+    <div class="emoji-container">
+        <img src="imgs/seashell1.png" class="emoji"  data-message="Like a seashell, you're beautiful, unique, and shaped by the waves you've been through.">
+        <img src="imgs/seashell2.png" class="emoji" style="width: 3vw;" data-message="I like your brown eyes, your smile—the way it lights up your face—your tiny dimples, the gentle curve of your eye bags, your voice, your hair, your little bangs… all of it. I like everything about you—even the things you wish you could change. The little details you dislike are the very things I adore most.">
+        <img src="imgs/orange1.png" class="emoji"  data-message="I will peel oranges for you. I'll take care and will always care for you in the quiet, everyday ways. :p">
+        <img src="imgs/cake.png" class="emoji" data-message="Like I always say, be gentle with yourself. Let rest cradle you now and then, and wander from your burdens when the weight feels too much.">
+        <img src="imgs/strawberry.png" class="emoji" data-message="Even strawberries need time to grow sweet. So do you.">
+        <img src="imgs/pearl.png" class="emoji" style="width: 3vw;" data-message="It’s okay not to be okay—life is a roller coaster, full of ups and downs, and the bad days are only passing clouds. So please, don’t be discouraged when things get tough. You’ve always had the strength to pull through, Alli—and you still do.">
+        <img src="imgs/mug1.png" class="emoji" data-message="You are like porcelain—delicate, yet resilient. And every crack you've mended glows like gold.">
+        <img src="imgs/apple.png" class="emoji" data-message="You don’t have to be everyone’s favorite fruit. Even the sweetest apple won’t please every taste.">
+        <img src="imgs/digicam.png" class="emoji" data-message="Capture every moment and hold it close—document the little things, the quiet days, the loud laughs. One day, when nostalgia knocks, you’ll have pieces of your past to look back on, like soft echoes frozen in time.">
+        <img src="imgs/hands.png" class="emoji" style="width: 3vw;" data-message="I know you already carry this truth in your heart, but if ever the loneliness creeps in, just remember—God is always with you, holding you through it all.">
+        <img src="imgs/books.png" class="emoji"  data-message="To Alli, who finds comfort in the quiet pages—may you always discover a little magic in every chapter, and may the stories you hold close remind you that your own is still unfolding beautifully.">
+        <img src="imgs/ribbon.png" class="emoji"  data-message="I pray that success finds its way to you, not just in wealth, but in peace of heart and clarity of mind. May God's grace guide you through every step.">
+        <img src="imgs/choco.png" class="emoji" data-message="You might be allergic to chocolate, but you were made to be someone’s favorite comfort anyway. (someone is me hehe)">
+        <img src="imgs/tulip.png" class="emoji" style="width: 3vw;" data-message="Take every opportunity that feels right for you. It might be risky, but it's in the leap—and in the landing—that you’ll shape who you’re meant to be.">
+        <img src="imgs/rabbit.png" class="emoji" style="width: 4vw;" data-message="Don’t forget to wear a smile. Even on the tough days, it can be a quiet strength—a small light that reminds both you and the world that hope still lingers.">
+        <img src="imgs/icecream.png" class="emoji" style="width: 4vw;" data-message="You have a kind, pure soul—don’t let the world make you feel like that’s anything less than a strength.">
+        <img src="imgs/teddybear.png" class="emoji" data-message="You’ve inspired me to grow, to do better, and to become a better version of myself.">
+        <img src="imgs/cupcake.png" class="emoji" data-message="Self-doubt may whisper you're not enough, but remember—you’ve overcome every hard day so far. You’re capable, you’re growing, and you’re more than what your fears say.">
+        <img src="imgs/journal.png" class="emoji" data-message="You’re the author of your life—write it boldly. Do what sets your soul on fire, and choose the path that makes you truly happy.">
+        <img src="imgs/pinkheart.png" style="width: 4vw;" class="emoji" data-message="I’m not the best at expressing my thoughts and feelings, so I created this website as my way of saying what words sometimes can't.">
+        <img src="imgs/sunflower.png" style="width: 4vw;" class="emoji" data-message="I hope this brings you even the slightest bit of joy—just enough to brighten your day.">
+        <img src="imgs/pancake.png" style="width: 4vw;" class="emoji" data-message="When was the last time you felt at peace, even for a moment—like the world slowed down just enough for you to breathe and simply be?">
+        <img src="imgs/cookie.png" style="width: 3vw;" class="emoji" data-message="You don't have to have it all figured out, Alli. Just remind yourself to keep going. :>">
+        <img src="imgs/bouquet.png" class="emoji" data-message="You are enough, always has been, even on the days you doubted it.">
+        <img src="imgs/cat.png" style="width: 4vw;" class="emoji" data-message="Let it out, then let it go. Peace is not weakness, it's strength in quiet form.">
+        <img src="imgs/dog.png" class="emoji" data-message="Be patient with yourself. Growth takes time, and so do the best things in life. You’re becoming something beautiful, even if you can’t see it just yet.">
+        <img src="imgs/flower.png" class="emoji" data-message="You're safe, Alli. It's only your thoughts getting loud again. You'll make it through.">
+        <img src="imgs/gift.png" class="emoji" data-message="Forgive yourself, Alli, not because you never made mistakes but because you are still growing and learning every day.">
+        <img src="imgs/trophy.png" class="emoji" data-message="Celebrate small wins, they're proof you're moving forward, even if it's one quiet step at a time.">
+        <img src="imgs/eye.png" style="width: 4vw;" class="emoji" data-message="Take a breath, Alli. Just one task, one moment at a time. That is all you need to focus on right now. Be gentle with yourself.">
+        <img src="imgs/pillow.png" class="emoji" data-message="You are not alone, Alli. Even in the quiet moments when everything feels still, someone out there is thinking of you, wishing you peace, and hoping your heart feels a little lighter soon.">
+        <img src="imgs/balloon.png" class="emoji" data-message="Alli, you don’t owe anyone an explanation for the fences you build to protect your peace. What matters most is that you feel safe, whole, and at ease within your own space.">
+        <img src="imgs/shrimp.png" style="width: 4vw;" class="emoji" data-message="Please be careful and avoid eating any foods you’re allergic to, we just don’t want you going through anything painful or risky because of something that could’ve been avoided.">
+        <img src="imgs/lily.png" style="width: 4vw;" class="emoji" data-message="I like you, enough that I’d be okay with you ghosting me every time exams come around, even if it means being on the sidelines while you stress and focus. I’d still choose you, even in the silence.">
+        <img src="imgs/hairclip.png" class="emoji" data-message="Live the kind of life that makes your heart feel full — laugh loudly, love deeply, and never hold back from chasing what makes your soul feel alive.">
+        <img src="imgs/star.png" class="emoji" data-message="There are nights the sky feels heavy, but still, the stars appear — distant, quiet, yet faithful. Like them, you don’t have to be loud to be strong. Your light, though soft, still reaches someone’s darkness.">
+        <img src="imgs/sunrise.png" style="width: 3vw;" class="emoji" data-message="Please take it easy, Alli. You're doing great. Just like the sunrise, each day gives you a fresh start. And like the sunset, it's okay to rest because even endings can be beautiful.">
+        <img src="imgs/rainbow.png" style="width: 3vw;" class="emoji" data-message="Chase the rainbow, not for the treasure, but for the beauty you’ll find along the way. Every step you take brings you closer to something wonderful.">
+        <img src="imgs/dango.png" class="emoji" data-message="I don’t want to extinguish your fire, nor do I wish to control it. I only long to be near it — to stand close enough to feel its warmth, to witness its glow, and to quietly admire the way it lights up everything around it, including me.">
+        <img src="imgs/bookandrose.png" class="emoji" data-message="I saw an Instagram post that said April 23 is 'Books and Roses' Day, where people give books and roses to book lovers. So this serves as my 'Books and Roses' present for you.">
+        <img src="imgs/koi.png" class="emoji" data-message="Like a koi in rushing waters, you keep moving forward — not because it’s easy, but because there’s strength in your spirit. Resilience isn’t about never falling, but about rising with grace, no matter how strong the current.">
+        <img src="imgs/goldfish.png" class="emoji" data-message="This might be a selfish thing to say. I hope I'm not confusing you with everything I’ve been doing — it’s just that I like you a lot, and I always will... until the day the sunsets no longer move me, and the songs we shared fade from memory.">
+        <img src="imgs/cinnamoroll.png" style="width: 4vw;" class="emoji" data-message="Walk your path without asking for permission. Shine in ways only you can. You are your own masterpiece, and you owe it to yourself to live boldly, not quietly. You do you, Alli.">
+        <img src="imgs/snowflake.png" style="width: 3vw;" class="emoji" data-message="I miss you, little cutie. :p">
+        <img src="imgs/bread.png" style="width: 4vw;" class="emoji" data-message="I hope you heal from the things you don’t talk about, Alli. I hope you win your silent battles. Always remember that you’re not alone, and God is always with you.">
+        <img src="imgs/minute-maid.png" class="emoji" data-message="I admire your mindset and values. The way you stay true to yourself, make thoughtful choices, and lead with kindness is truly inspiring.">
+        <img src="imgs/piattos.png" class="emoji" data-message="I’m sorry if I take too long to reply — and yeah, maybe I leave you on seen a lot. It’s not that I don’t want to talk; I just don’t always know how to start or what to say. I get stuck between keeping the convo going and not sounding awkward. But I’m building up my courage, because you matter to me and I want to do better. :>>">
+        <img src="imgs/cherries.png" style="width: 4vw;" class="emoji" data-message="I'm grateful our paths have intertwined — a meeting I’ll always treasure. The moments we shared still linger in my heart, and each memory whispers how deeply I’ve come to cherish you.">
+        <img src="imgs/gummy.png" class="emoji" data-message="There's nothing here, just wanted to say you're so kind and gorgeous.">
+        <img src="imgs/gelatin.png" style="width: 4vw;" class="emoji" data-message="I truly admire your dedication and the way you put your heart into everything you do. Your kindness and strong faith are truly inspiring.">
+        <img src="imgs/fiveGerbera.png" style="width: 6vw;" class="emoji" data-message="These five gerbera flowers are my gift to you this May 15, Bring Flowers to Someone Day. I saw you talking about these flowers in your Instagram notes, so I got really curious about them. ^^">
+        <img src="imgs/sixGerberas.png" style="width: 4vw;" class="emoji" data-message="Six gerberas for you. :>> 💐">
+        <img src="imgs/c2.png" class="emoji" data-message="We're having our final exams this week and next week. I just wanted to let you know that I've been thinking about you a lot lately. I hope you're doing great these days. After finals, I'll add more emojis and messages for you. :>>">
+        <img src="imgs/cloud.png" class="emoji" data-message="Trust in your journey. No one walks your path, feels your heart, or knows your strength like you do.">
+        <img src="imgs/honey.png" class="emoji" data-message="Falling isn’t really that bad. If it's for you.
+        - honey by boy pablo">
+        <img src="imgs/hourglass.png" class="emoji" style="width: 3vw;" data-message="You may watch time pass like sand in an hourglass, but the moments you spend with family and friends make it all meaningful.">
+        <img src="imgs/gloves.png" class="emoji" data-message="Not everything that burns you is meant to be avoided — sometimes you just need the right kind of strength to hold on.">
+        <img src="imgs/donuts.png" class="emoji" data-message="What if everything you’ve gone through was preparing you to become the person someone else will one day be grateful for?">
+        <img src="imgs/pinktowel.png" class="emoji" data-message="How have you been these days, Alli? I hope you’re enjoying everything you do, and that you find happiness every day. :>>">
+        <img src="imgs/carbonara.png" class="emoji" data-message="Your absence bothers me. :>">
+        <img src="imgs/crochet.png" class="emoji" style="width: 4vw;" data-message="Every small loop, patiently woven, turns into a beautiful story made to last.">
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeBtn">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

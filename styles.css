@@ -145,3 +145,17 @@ body{
     
     opacity: 70%;
 }
+
+.bg-pic {
+    position: absolute;
+    right: 1px;
+}
+.bg-pic img {
+    width: 110vw;
+    height: 110vh;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
+    opacity: 30%;
+}
