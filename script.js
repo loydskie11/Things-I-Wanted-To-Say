@@ -46,3 +46,19 @@ icon.addEventListener('click', () => {
         icon.src = 'assets/play.png';
     }
 });
+
+function validate(event) {
+    event.preventDefault();
+
+    const nickname = document.getElementById("Nickname").value.trim().toLowerCase();
+    const birthdate = document.getElementById("Birthdate").value;
+    const errorDiv = document.getElementById("error-msg");
+
+    if (nickname === "alli" && birthdate === "2007-01-18") {
+        window.location.href = "main.html";
+    } else {
+        errorDiv.textContent = "Incorrect nickname or birthdate.";
+        errorDiv.style.visibility = "visible";
+        errorDiv.style.opacity = "1";
+    }
+};
